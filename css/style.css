@@ -179,8 +179,38 @@ footer{
 
 
 /* SOBRE NOSOTROS */
+
+
 .aboutus-img{
     border-radius: 2%;
+}
+.sobrenosotros-section{
+    display: block;
+    background-color: #016297;
+    color: white; 
+    padding: 50px;
+}
+
+.sobrenosotros-image img{
+    width: 450px; 
+    height: 400px;
+    box-shadow: 0px 0px 21px 1px rgb(0 0 0 / 51%);
+}
+/* 
+.sobrenosotros-text, .sobrenosotros-image img{
+    width: 100%;
+} */
+
+.sobrenosotros-text{
+    display: block;
+}
+@media (min-width:800px){
+.sobrenosotros-text{
+    width: 50%;
+}
+.sobrenosotros-section{
+    display: flex;
+    justify-content: center;
 }
 
 /* WHATSAPP FLOATING BUTTON */
@@ -311,6 +341,7 @@ element.style {
 @media (max-width: 800px) {
     .flex-container {
       flex-direction: column;
+      padding: 15px 5px;
     }
   }
 
