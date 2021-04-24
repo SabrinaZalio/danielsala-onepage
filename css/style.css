@@ -15,10 +15,13 @@
 .navbar{
     padding: 10px 0px;
 }
-.navbar-nav{
-    margin-right: 60px;
-    margin-left: 20px;
+@media (max-width: 992px){
+ .nav-link {
+    padding: 8px 14px!important;
+    font-size: 25px;
 }
+ }
+   
 .nav-item{
   font-size: 23px;
   margin-right: 6px;
@@ -131,6 +134,10 @@ footer{
   height: 80px;
   padding-top: 10px;
 
+}.info-links{
+    color: black!important;
+    position: relative;
+    text-decoration: none!important;
 }
 .links{
     text-decoration: none;
@@ -204,6 +211,14 @@ footer{
 .sobrenosotros-text{
     display: block;
 }
+@media (max-width:800px){
+.formulario{
+    padding: 0px 30px;
+}
+.map{
+    text-align: center;
+}
+}
 @media (min-width:800px){
 .sobrenosotros-text{
     width: 50%;
@@ -213,31 +228,34 @@ footer{
     justify-content: center;
 }
 
-/* WHATSAPP FLOATING BUTTON */
-.floating-btn{
-    /* width: 80px;
-    height: 80px;
-    border-radius: 50%; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 40px;
-    text-decoration: none;
-    /* box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25); */
-    transition: background 0.25s;
-
-    position: fixed;
-    right: 50px;
-    bottom: 70px;
-}
 
 .contact-inf{
     margin: 10px 50px 10px 0px;
     min-width: 280px;
 }
+
 /* CONTACTO */
 
+
+.formulario-section{
+    display: flex;
+    justify-content: center; 
+    padding: 20px;
+}
+.formulario{
+    display: inline-block; 
+    width: 50%;
+    margin:25px 0px;
+}
+.form{
+    padding: 25px 0px 0px 20px;
+}
+.map{
+    text-align: center;
+    /* margin: 50px 0px; */
+    display: inline-block;
+    margin-top: 115px;
+}
 .contact-info{
     display:flex;
     padding: 0px 100px;
@@ -247,21 +265,8 @@ footer{
     /* margin: 0 auto; */
     padding-bottom: 20px;
 }
-.btn-enviar{
-    margin-top: 40px;
-    padding: 10px 30px;
-    border-radius: 10px;
-    background-color: #c3c3c3;
-    border: 1px solid #c3c3c3;
-    cursor: pointer;
-    box-shadow: 0px 12px 18px 0px rgb(0 0 0 / 30%);
-}
-.map{
-    text-align: center;
-    /* margin: 50px 0px; */
-    display: inline-block;
-    margin-top: 115px;
-}
+
+
 .contact-title{
     margin: 8px 0px 0px 8px;
     font-weight: 800;
@@ -272,8 +277,7 @@ footer{
     margin: 0;
 }
 
-element.style {
-}
+
 
 /* @media (min-width: 1076px){
 .card-deck {
@@ -285,6 +289,7 @@ element.style {
     margin-left: -15px;
 }
  } */
+}
 /* CONTACTO DATOS */
  @media only screen and (max-width: 1150px){
     .contact-info{
@@ -302,18 +307,23 @@ element.style {
 
 
 
-
+.btn-enviar{
+    margin-top: 40px;
+    padding: 10px 30px;
+    border-radius: 10px;
+    background-color: #c3c3c3;
+    border: 1px solid #c3c3c3;
+    cursor: pointer;
+    box-shadow: 0px 12px 18px 0px rgb(0 0 0 / 30%);
+}
 
 .contact-inf{
     display: flex;
     text-align: center;
     justify-content: center;
+    margin: 10px 0px;
 }
-.info-links{
-    color: black;
-    position: relative;
-    text-decoration: none!important;
-}
+
 .info-links:after{
     content: "";
     position: absolute;
@@ -351,7 +361,23 @@ element.style {
   }
 
 
-
+/* WHATSAPP FLOATING BUTTON */
+.floating-btn{
+    /* width: 80px;
+    height: 80px;
+    border-radius: 50%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 40px;
+    text-decoration: none;
+    /* box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25); */
+    transition: background 0.25s;
+    position: fixed;
+    right: 50px;
+    bottom: 120px;
+}
   /* SCROLLBAR */
 
 
