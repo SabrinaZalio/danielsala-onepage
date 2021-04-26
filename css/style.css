@@ -28,6 +28,7 @@
 }
 .nav-link{
     position: relative;
+    text-align: center;
     text-decoration: none;
     columns: #a0a0a0;
     letter-spacing: 0.5px;
