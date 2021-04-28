@@ -117,10 +117,12 @@ color: #474747;
     text-align: center;
 }
 .card-deck {
-    margin: 0!important;
+    /* margin: 0!important;
     padding: 50px 100px;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; */
+    margin: auto;
+    padding-bottom: 60px;
 }
 .card{
     min-width: 250px;
@@ -384,10 +386,8 @@ footer{
 
 /* WHATSAPP FLOATING BUTTON */
 .floating-btn{
-    /* width: 80px;
-    height: 80px;
-    border-radius: 50%; */
     display: flex;
+    z-index: 9999;
     align-items: center;
     justify-content: center;
     color: white;
@@ -504,11 +504,20 @@ footer{
 
 .testimonial {
     background-color: #fff;
-    padding: 25px 15px;
+    padding: 65px 15px 25px 15px;
     border-radius: 10px;
     text-align: center;
     border: 1px solid rgba(0,0,0,.125);
     box-shadow: 0px 12px 18px 0px rgb(0 0 0 / 30%);
     width: 90%;
     margin: auto
+}
+.testimonial-quote{
+    width: 80px!important;
+    height: 80px!important;
+    text-align: center;
+    display: inline!important;
+}
+.testimonial-text{
+    margin: 30px 0px;
 }
