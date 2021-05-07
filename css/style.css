@@ -321,8 +321,9 @@ footer{
     min-width: 280px;
 }
 .sobrenosotros-image img{
-    max-width: 450px; 
-    height: 380px;
+    max-width: 470px;
+    margin-top: 30px;
+    height: 500px;
     box-shadow: 0px 0px 21px 1px rgb(0 0 0 / 51%);
 }
 
