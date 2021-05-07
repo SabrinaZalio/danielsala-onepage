@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Lustria&display=swap');
 
 * {
     padding: 0;
@@ -6,22 +8,19 @@
     box-sizing: border-box;
     letter-spacing: 0.5px;
 }
-
 body {
     font-family: 'Roboto', sans-serif;
-    margin: 0;
 }
-
 .container-fluid{
     padding: 0;
-    min-width: 300px;
+    min-width: 290px;
 }
+
 
 /* MENU */
 .navbar{
     padding: 10px 0px;
 }
-
 @media (max-width: 992px){
  .nav-link {
     padding: 8px 14px!important;
@@ -61,13 +60,13 @@ body {
     flex-direction: row-reverse;
 }
 
+
 /* CARROUSEL */
 .carousel-container {
     width: 100%;
     max-width: 1900px;
     margin: auto;
 }
-
 .carrousel-img{
     width: 100%;
 }
@@ -78,9 +77,7 @@ body {
         object-fit: cover;
     }
 }
-
 .main-title{
-    /* text-align: center; */
     padding-top: 100px;
     margin:auto;
     width: fit-content;
@@ -93,28 +90,41 @@ body {
     border-bottom: 2px solid #016297;
     display: block;
 }
-/* .tituBig{
-
-font-weight: bold;
-margin-bottom: 30px;
-width: fit-content;
-font-family: 'Times New Roman',Georgia,"Times New Roman",serif;
-color: #474747;
-
+h1, h2{
+    font-family: 'Lustria', sans-serif;
 }
-.tituBig::after {
-    content: ' ';
-    width: 80%;
-    border-bottom: 2px solid #e5a61c;
-    display: block;
-} */
-/* IMAGENES */
+.title-consulta{
+    padding-bottom: 40px;
+    margin:0;
+    margin-left: 1rem;
+    padding-top: 70px;
+    /* text-align: center; */
+}
+/* WHATSAPP FLOATING BUTTON */
+.floating-btn{
+    display: flex;
+    z-index: 9999;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 40px;
+    text-decoration: none;
+    /* box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25); */
+    transition: background 0.25s;
+    position: fixed;
+    right: 50px;
+    bottom: 120px;
+}
 
+/* IMAGENES */
 .card, .card-img-top{
     border-radius: 2%;
 }
 .card-title{
     text-align: center;
+    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Lustria', sans-serif; */
+    /* font-family: 'Lato', sans-serif; */
 }
 .card-deck {
     /* margin: 0!important;
@@ -167,7 +177,7 @@ footer{
 .links{
     text-decoration: none;
     list-style: none;
-    margin-top: 15px;
+    /* margin-top: 15px; */
 }
 .footer-links{
     position: relative;
@@ -208,13 +218,27 @@ footer{
 .socialmedia-icon:hover{
     transform: translate(0, -5px);
 }
-
+.copyright-text{
+    text-align: center; 
+    margin-bottom: 0;
+    font-size: 11px;
+    margin-top:5px;
+    color: #a0a0a0;
+}
 
 /* SOBRE NOSOTROS */
-
-
 .aboutus-img{
     border-radius: 2%;
+}
+.second-title{
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+.second-title:after {
+    content: ' ';
+    max-width: 240px;
+    border-bottom: 2px solid white;
+    display: block;
 }
 .sobrenosotros-section{
     display: block;
@@ -222,51 +246,91 @@ footer{
     color: white; 
     padding: 50px;
 }
-
+.sobrenosotros-image {
+    text-align: center;
+}
 .sobrenosotros-image img{
-    width: 450px; 
-    height: 400px;
+    width: 80%; 
+    object-fit: cover;
+    height: 380px;
     box-shadow: 0px 0px 21px 1px rgb(0 0 0 / 51%);
 }
-/* 
-.sobrenosotros-text, .sobrenosotros-image img{
-    width: 100%;
-} */
-
 .sobrenosotros-text{
     display: block;
+}
+.iframe-map{
+    width: 80%;
+    height: 433px;
+    border: 0;
+    margin: 30px 0px;
+}
+@media (max-width:950px){
+    .map{
+        text-align: center;
+        margin-bottom:30px
+    }
+    .floating-btn{
+        right: 22px;
+        bottom: 110px;
+    }
 }
 @media (max-width:800px){
 .formulario{
     padding: 0px 30px;
 }
-.map{
+.title-consulta{
+    margin: auto;
+}
+}
+
+@media (max-width:550px){
+    .iframe-map {
+        width: 80%;
+        height: 400px;
+        border: 0;
+    }
+    .sobrenosotros-section {
+        padding: 25px;
+}
+.sobrenosotros-image{
     text-align: center;
-    margin-bottom:30px
+    /* width: 100%; */
+}
+.sobrenosotros-p{
+    margin-right: 0;
+    text-align: center;
+    font-size: 14px;
 }
 }
-@media (min-width:800px){
+@media (min-width:950px){
 .sobrenosotros-text{
     width: 50%;
+    margin-top: 30px;
+}
+.sobrenosotros-p{
+    margin-right: 50px;
+    font-size: 18px;
+    text-align: left;
 }
 .sobrenosotros-section{
     display: flex;
     justify-content: center;
 }
-
-
 .contact-inf{
     margin: 10px 50px 10px 0px;
     min-width: 280px;
 }
+.sobrenosotros-image img{
+    max-width: 450px; 
+    height: 380px;
+    box-shadow: 0px 0px 21px 1px rgb(0 0 0 / 51%);
+}
 
 /* CONTACTO */
-
-
 .formulario-section{
     display: flex;
     justify-content: center; 
-    padding: 20px;
+    padding: 50px;
 }
 .formulario{
     display: inline-block; 
@@ -278,7 +342,7 @@ footer{
 }
 .map{
     text-align: center;
-    /* margin: 50px 0px; */
+    width: 50%;
     display: inline-block;
     margin-top: 115px;
 }
@@ -302,7 +366,7 @@ footer{
     font-size: 26px;
     margin: 0;
 }
-
+}
 
 
 /* @media (min-width: 1076px){
@@ -315,7 +379,7 @@ footer{
     margin-left: -15px;
 }
  } */
-}
+
 /* CONTACTO DATOS */
  @media only screen and (max-width: 1150px){
     .contact-info{
@@ -323,14 +387,6 @@ footer{
         padding: 0px 20px;
     }
 }
-/* @media only screen and (max-width: 800px){
-    .form-group{
-        max-width: 90%;
-
-
-    }
-} */
-
 
 
 .btn-enviar{
@@ -369,8 +425,6 @@ footer{
 .info-links:hover{
     color: black;
 }
-
-
 .flex-container{
     display: flex;
     justify-content: center;
@@ -384,21 +438,6 @@ footer{
   }
 
 
-/* WHATSAPP FLOATING BUTTON */
-.floating-btn{
-    display: flex;
-    z-index: 9999;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 40px;
-    text-decoration: none;
-    /* box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25); */
-    transition: background 0.25s;
-    position: fixed;
-    right: 50px;
-    bottom: 120px;
-}
   /* SCROLLBAR */
 /* body { */
       /* position: absolute; */
@@ -510,6 +549,8 @@ footer{
     border: 1px solid rgba(0,0,0,.125);
     box-shadow: 0px 12px 18px 0px rgb(0 0 0 / 30%);
     width: 90%;
+    min-height: 360px;
+    max-height: 370px;
     margin: auto
 }
 .testimonial-quote{
