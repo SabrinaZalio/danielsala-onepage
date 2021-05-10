@@ -163,6 +163,7 @@ footer{
 .links{
     text-decoration: none;
     list-style: none;
+    margin: 30px 0px 0px 0px;
 }
 .footer-links{
     position: relative;
@@ -190,7 +191,8 @@ footer{
 }
 .icons{
     display: flex;
-    margin-top:30px;
+    margin-top:40px;
+    margin-bottom: 10px;
     justify-content: center;
 }
 .socialmedia-icon{
@@ -257,6 +259,15 @@ footer{
     right: 22px;
     bottom: 110px;
 }
+.footer-container{
+    text-align: center;
+}
+.links{
+    margin: 0;
+}
+.logo-footer{
+    margin-bottom: 20px;
+}
 }
 @media (max-width:800px){
 .formulario{
@@ -264,6 +275,10 @@ footer{
 }
 .title-consulta{
     margin: auto;
+}
+.btn-enviar{
+    display: block;
+    margin: 20px auto;
 }
 }
 
@@ -374,7 +389,9 @@ footer{
         padding: 0px 20px;
     }
 }
-
+.links-footer-mobile{
+    padding-bottom: 12px;
+}
 .btn-enviar{
     margin-top: 40px;
     padding: 10px 30px;
@@ -418,7 +435,7 @@ footer{
     right: 32px;
     bottom: 54px;
   }
-
+  }
 @media (max-width: 800px) {
     .flex-container {
       flex-direction: column;
