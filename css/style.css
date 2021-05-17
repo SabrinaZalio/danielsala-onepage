@@ -7,6 +7,7 @@
     margin: 0;
     box-sizing: border-box;
     letter-spacing: 0.5px;
+    word-spacing: 1px;
     font-family: 'Roboto', sans-serif;
 }
 .container-fluid{
@@ -125,7 +126,7 @@ h1, h2{
 }
 .card{
     /* min-width: 248px; */
-    margin-right: 20px;
+    /* margin-right: 20px; */
     margin-top: 20px;
     /* box-shadow: 0px 0px 21px 1px rgba(0,0,0,0.51);
     -webkit-box-shadow: 0px 0px 21px 1px rgba(0,0,0,0.51);
@@ -244,11 +245,18 @@ footer{
 .sobrenosotros-text{
     display: block;
 }
+.sobrenosotros-lista{
+    padding-left:30px;
+}
 .iframe-map{
     width: 80%;
     height: 433px;
     border: 0;
     margin: 30px 0px;
+}
+.logo-footer{
+    width: 180px;
+    margin-right: 220px;
 }
 @media (max-width:950px){
 .map{
@@ -267,6 +275,7 @@ footer{
 }
 .logo-footer{
     margin-bottom: 20px;
+    margin-right: 0;
 }
 }
 
@@ -297,11 +306,14 @@ footer{
 }
 .sobrenosotros-p{
     margin-right: 0;
-    text-align: center;
+    /* text-align: center; */
     font-size: 14px;
 }
 .info-links{
     font-size:20px;
+}
+.logo-footer{
+    margin-right:0;
 }
 }
 
@@ -557,26 +569,34 @@ footer{
     box-shadow: 0px 12px 18px 0px rgb(0 0 0 / 30%);
     width: 90%;
     min-height: 360px;
-    max-height: 370px;
-    margin: auto
+    /* max-height: 370px; */
+    margin: auto;
+    position: relative;
 }
+
 .testimonial-quote{
     width: 80px!important;
     height: 80px!important;
-    text-align: center;
-    display: inline!important;
+    /* text-align: center;
+    display: inline!important; */
+    margin: auto;
 }
 .testimonial-text{
     margin: 30px 0px;
 }
-
-
+.testimonial-name{
+    position: absolute;
+    bottom: 5px;
+    right: 0;
+    left: 0;
+}
 
 @media (max-width: 580px){ 
     .card {
         width: 80%;
         /* margin: 20px 0 0 0!important; */
         margin: auto;
+      
     }
 }
 @media(min-width: 580px){
@@ -587,5 +607,8 @@ footer{
 @media (min-width: 1200px){ 
 .container, .container-lg, .container-md, .container-sm, .container-xl {
     max-width: 1260px!important;
+}
+.testimonial{
+    height: 370px;
 }
 }
