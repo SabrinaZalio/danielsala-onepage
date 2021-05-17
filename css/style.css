@@ -124,8 +124,8 @@ h1, h2{
     padding-bottom: 60px;
 }
 .card{
-    min-width: 250px;
-    margin-right: 20px!important;
+    /* min-width: 248px; */
+    margin-right: 20px;
     margin-top: 20px;
     /* box-shadow: 0px 0px 21px 1px rgba(0,0,0,0.51);
     -webkit-box-shadow: 0px 0px 21px 1px rgba(0,0,0,0.51);
@@ -572,8 +572,20 @@ footer{
 
 
 
-
+@media (max-width: 580px){ 
+    .card {
+        width: 80%;
+        /* margin: 20px 0 0 0!important; */
+        margin: auto;
+    }
+}
+@media(min-width: 580px){
+    .card{
+        min-width: 248px;
+}
+}
 @media (min-width: 1200px){ 
 .container, .container-lg, .container-md, .container-sm, .container-xl {
-    max-width: 1260px;
-}}
+    max-width: 1260px!important;
+}
+}
