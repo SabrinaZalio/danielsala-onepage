@@ -94,7 +94,7 @@ h1, h2{
     font-family: 'Lato', sans-serif;
 }
 .title-consulta{
-    padding-bottom: 40px;
+    padding-bottom: 25px;
     margin:0;
     margin-left: 1rem;
     padding-top: 70px;
@@ -320,6 +320,12 @@ footer{
 }
 .nav-link{
     font-size: 20px;
+}
+.second-title{
+    margin: auto;
+    width: fit-content;
+    padding-bottom: 40px;
+    padding-top: 20px;
 }
 }
 
