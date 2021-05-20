@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Lustria&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo&display=swap');
 
 * {
     padding: 0;
@@ -9,7 +10,8 @@
     letter-spacing: 0.5px;
     word-spacing: 1px;
     user-select: none;
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'Exo', sans-serif;
 }
 .container-fluid{
     padding: 0;
@@ -89,7 +91,7 @@
     display: block;
 }
 h1, h2{
-    font-family: 'Lustria', sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 .title-consulta{
     padding-bottom: 40px;
@@ -315,6 +317,9 @@ footer{
 }
 .logo-footer{
     margin-right:0;
+}
+.nav-link{
+    font-size: 20px;
 }
 }
 
