@@ -121,7 +121,7 @@ h1, h2{
 }
 .card-title{
     text-align: center;
-    /* font-family: 'Roboto', sans-serif; */
+    font-size: 1.10rem;
 }
 .card-deck {
     margin: auto;
