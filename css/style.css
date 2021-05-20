@@ -8,6 +8,7 @@
     box-sizing: border-box;
     letter-spacing: 0.5px;
     word-spacing: 1px;
+    user-select: none;
     font-family: 'Roboto', sans-serif;
 }
 .container-fluid{
