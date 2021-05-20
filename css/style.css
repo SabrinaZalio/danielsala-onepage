@@ -28,7 +28,7 @@
     padding: 8px 14px!important;
     font-size: 25px;
   }
-}  
+}
 .nav-item{
   font-size: 23px;
   margin-right: 6px;
@@ -121,7 +121,7 @@ h1, h2{
 }
 .card-title{
     text-align: center;
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
 }
 .card-deck {
     margin: auto;
@@ -209,7 +209,7 @@ footer{
     transform: translate(0, -5px);
 }
 .copyright-text{
-    text-align: center; 
+    text-align: center;
     margin-bottom: 0;
     font-size: 11px;
     margin-top:5px;
@@ -233,14 +233,14 @@ footer{
 .sobrenosotros-section{
     display: block;
     background-color: #016297;
-    color: white; 
+    color: white;
     padding: 50px;
 }
 .sobrenosotros-image {
     text-align: center;
 }
 .sobrenosotros-image img{
-    width: 80%; 
+    width: 80%;
     object-fit: cover;
     height: 380px;
     box-shadow: 0px 0px 21px 1px rgb(0 0 0 / 51%);
@@ -351,11 +351,11 @@ footer{
 /* CONTACTO */
 .formulario-section{
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     padding: 50px;
 }
 .formulario{
-    display: inline-block; 
+    display: inline-block;
     width: 50%;
     margin:25px 0px;
 }
@@ -431,7 +431,7 @@ footer{
 .info-links:after{
     content: "";
     position: absolute;
-    background: black; 
+    background: black;
     height: 2px;
     width: 0;
     left: 0;
@@ -556,7 +556,7 @@ footer{
 .owl-theme .owl-dots .owl-dot:hover span {
 	background: #869791
 }
-  
+
 .testimonial-container {
     max-width: 1200px;
     margin: auto;
@@ -597,12 +597,12 @@ footer{
     left: 0;
 }
 
-@media (max-width: 580px){ 
+@media (max-width: 580px){
     .card {
         width: 80%;
         /* margin: 20px 0 0 0!important; */
         margin: auto;
-      
+
     }
 }
 @media(min-width: 580px){
@@ -610,7 +610,7 @@ footer{
         min-width: 248px;
 }
 }
-@media (min-width: 1200px){ 
+@media (min-width: 1200px){
 .container, .container-lg, .container-md, .container-sm, .container-xl {
     max-width: 1260px!important;
 }
