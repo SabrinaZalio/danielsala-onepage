@@ -195,7 +195,7 @@ footer{
 }
 .icons{
     display: flex;
-    margin-top:40px;
+    margin-top:30px;
     margin-bottom: 10px;
     justify-content: center;
 }
@@ -210,7 +210,8 @@ footer{
 }
 .copyright-text{
     text-align: center;
-    margin-bottom: 0;
+    padding-bottom: 5px;
+    margin-bottom:0;
     font-size: 11px;
     margin-top:5px;
     color: #a0a0a0;
@@ -260,6 +261,10 @@ footer{
 .logo-footer{
     width: 180px;
     margin-right: 220px;
+}
+.footer-div{
+    padding-top: 8px;
+    margin: 0;
 }
 @media (max-width:950px){
 .map{
